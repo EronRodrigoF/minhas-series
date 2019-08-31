@@ -17,15 +17,20 @@ const toogle = () => {
 }
 return (
     <Navbar color='light' light expand='md'>
+      <div className='container'>
         <NavbarBrand tag={Link} to='/'>Minhas Séries</NavbarBrand>
         <NavbarToggler onClick={toogle}/>
         <Collapse isOpen={open} navbar>
         <Nav className='ml-auto' navbar>
             <NavItem>
-            <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
+                <NavLink tag={Link} to='/series'>Séries</NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
             </NavItem>
         </Nav>
         </Collapse>
+      </div>
     </Navbar>
 )
 }
