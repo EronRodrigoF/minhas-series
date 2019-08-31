@@ -80,7 +80,6 @@ if (success) {
 
 return (
     <div>
-    <pre>{JSON.stringify(data)}</pre>
         <header style={masterHeader}>
             <div className='h-100' style={{ background: 'rgba(0,0,0,0.7)'}}>
                 <div className='h-100 container'>
